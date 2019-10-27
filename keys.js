@@ -7,7 +7,7 @@ axios.get("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=tr
   }
 );
 
-var spotify = new Spotify({
-  id: ed0f03812b364098931fbc2ff5266ec3,
-  secret: ca4e48ba8d8f446b8fa0b7105f261640
-});
+exports.spotify = {
+  id: process.env.SPOTIFY_ID,
+  secret: process.env.SPOTIFY_SECRET
+};
